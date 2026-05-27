@@ -1,12 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 
-const stats = [
-  { label: 'Conferencistas', value: '30+' },
-  { label: 'Líderes presentes', value: '1,200+' },
-  { label: 'Países', value: '12+' },
-  { label: 'Días', value: '3' },
-];
-
 function useCountdown(target) {
   const calc = useCallback(() => {
     const diff = Math.max(0, target.getTime() - Date.now());
@@ -158,17 +151,6 @@ export default function Hero() {
           >
             Ver agenda
           </a>
-        </div>
-
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-          {stats.map((s) => (
-            <div key={s.label}>
-              <p className="text-3xl md:text-4xl font-black text-accent">
-                {s.value}
-              </p>
-              <p className="text-gray-400 text-sm mt-1">{s.label}</p>
-            </div>
-          ))}
         </div>
       </div>
 

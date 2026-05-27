@@ -56,7 +56,7 @@ export default function Itinerary() {
           <h2 className="text-4xl md:text-5xl font-black mt-3 text-white">
             Itinerario de la{' '}
             <span className="bg-gradient-to-r from-highlight to-accent bg-clip-text text-transparent">
-              cumbre
+              Conferencia
             </span>
           </h2>
         </div>

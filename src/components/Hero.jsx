@@ -22,6 +22,10 @@ function useCountdown(target) {
 }
 
 export default function Hero() {
+  const phone = "+51933401503";
+  const message = "Hola, me gustaría inscribirme para el Congreso de Innovación. ¿Podrían darme la información para continuar?";
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
   const canvasRef = useRef(null);
   const countdown = useCountdown(new Date('2026-06-11T00:00:00'));
 
@@ -102,12 +106,12 @@ export default function Hero() {
           11, 12 y 13 Junio 2026 · Perú
         </span>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.05] tracking-tight mb-4">
-          <span className="bg-gradient-to-r from-white via-accent to-highlight bg-clip-text text-transparent">
+        <h1 className="font-black leading-[1.05] tracking-tight mb-4">
+          <span className="text-white text-3xl md:text-6xl lg:text-7xl bg-gradient-to-r from-white via-accent to-highlight bg-clip-text text-transparent">
             Congreso de Liderazgo
           </span>
           <br />
-          <span className="text-white">e Innovación 2026</span>
+          <span className="text-6xl md:text-7xl lg:text-8xl bg-gradient-to-r from-white via-accent to-highlight bg-clip-text text-transparent">INNOVACIÓN</span>
         </h1>
 
         <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed font-light">
@@ -135,7 +139,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#register"
+            href={url} target="_blank"
             className="group relative inline-flex items-center gap-2 bg-accent text-primary font-bold px-8 py-4 rounded-full text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(6,182,212,0.5)]"
           >
             <span className="relative z-10">Asegura tu lugar</span>

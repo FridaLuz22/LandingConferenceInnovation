@@ -31,7 +31,7 @@ const speakers = [
 
 export default function Speakers() {
   return (
-    <section id="speakers" className="py-28 px-4 relative">
+    <section id="speakers" className="py-14 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-accent text-sm tracking-[0.25em] uppercase font-semibold">

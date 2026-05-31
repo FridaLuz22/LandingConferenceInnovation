@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 
 export default function FloatingButton() {
   const [visible, setVisible] = useState(false);
+  const phone = "+51933401503";
+  const message = "Hola, me gustaría inscribirme para el Congreso de Innovación. ¿Podrían darme la información para continuar?";
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
     const handleScroll = () => setVisible(window.scrollY > 400);
@@ -19,7 +23,7 @@ export default function FloatingButton() {
       }`}
     >
       <a
-        href="#register"
+        href={url} target="_blank"
         className="group flex items-center gap-3 bg-accent text-primary font-bold px-6 py-4 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_50px_rgba(6,182,212,0.6)] hover:scale-105 transition-all duration-300"
       >
         <svg

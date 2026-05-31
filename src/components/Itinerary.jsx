@@ -5,38 +5,30 @@ const days = [
     day: 'Día 1',
     date: '11 Junio',
     events: [
-      { time: '08:30', title: 'Registro & Bienvenida', desc: 'Apertura de puertas y café de bienvenida.' },
-      { time: '09:30', title: 'Devocional de Apertura', desc: 'Tiempo de oración y palabra para iniciar la cumbre.' },
-      { time: '10:00', title: 'Keynote: Liderazgo con Propósito', desc: 'David Mendoza sobre los fundamentos del liderazgo cristiano.' },
-      { time: '11:30', title: 'Panel: La Iglesia del Siglo XXI', desc: 'Líderes discuten cómo innovar sin perder la esencia.' },
-      { time: '13:00', title: 'Almuerzo de Conexión', desc: 'Networking entre pastores y líderes.' },
-      { time: '14:30', title: 'Taller: Estrategia Digital Ministerial', desc: 'Rebeca Torres comparte herramientas digitales para tu iglesia.' },
-      { time: '17:00', title: 'Cierre del Día 1', desc: 'Resumen y anuncios.' },
+      { time: '08:00 pm', title: 'Apertura', desc: 'Apertura de puertas para inicio del Congreso.' },
     ],
   },
   {
     day: 'Día 2',
     date: '12 Junio',
     events: [
-      { time: '08:30', title: 'Devocional Matutino', desc: 'Inicio del día con alabanza y palabra.' },
-      { time: '09:30', title: 'Formando la Próxima Generación', desc: 'Josué Kim sobre el discipulado y liderazgo juvenil.' },
-      { time: '11:00', title: 'Taller: Coaching de Equipos', desc: 'Ana Laura Cruz guía sesión práctica de liderazgo.' },
-      { time: '12:30', title: 'Panel: Fe e Innovación Social', desc: 'Samuel Osei y otros líderes de impacto comunitario.' },
-      { time: '14:00', title: 'Almuerzo & Expo Ministerial', desc: 'Recorrido por stands de recursos y ministerios.' },
-      { time: '15:30', title: 'Workshop: Creatividad en la Adoración', desc: 'Cristina Vázquez sobre producción y arte creativa.' },
-      { time: '18:00', title: 'Noche de Conexión', desc: 'Cena especial con líderes y conferencistas.' },
+      { time: '09:00 am', title: 'Conferencia 1', desc: 'Sin perder el fuego - Pr.Alfonso Quevedo.' },
+      { time: '10:15 am', title: 'Conferencia 2', desc: 'Innovar o desaparecer - Rev.Dominic Yeo.' },
+      { time: '12:00 pm', title: 'Conferencia 3', desc: 'Estructuras que frenan el poder - Pr. Eliseo de la Cruz.' },
+      { time: '03:00 pm', title: 'Taller 1', desc: 'Primer Taller.' },
+      { time: '08:00 pm', title: 'Noche de Gloria', desc: 'La iglesia de esta generación - Rev. Dominic Yeo.' },
     ],
   },
   {
     day: 'Día 3',
     date: '13 Junio',
     events: [
-      { time: '09:00', title: 'Devocional de Cierre', desc: 'Tiempo de reflexión y gratitud.' },
-      { time: '10:00', title: 'Liderazgo en Tiempos de Cambio', desc: 'Panel de pastores sobre desafíos actuales del liderazgo.' },
-      { time: '11:30', title: 'Taller: Planificación Estratégica para Iglesias', desc: 'Herramientas prácticas para el crecimiento ministerial.' },
-      { time: '13:00', title: 'Almuerzo de Clausura', desc: 'Comida de despedida y networking final.' },
-      { time: '14:30', title: 'Palabra de Cierre y Comisión', desc: 'Mensaje final y envío de los asistentes.' },
-      { time: '16:00', title: 'Cierre de la Cumbre', desc: 'Fin del evento.' },
+      { time: '09:00 am', title: 'Conferencia 4', desc: 'Ministros influyentes - Pr. Alfonso Quevedo.' },
+      { time: '10:15 am', title: 'Conferencia 5', desc: 'El liderazgo innovador - Rev. Dominic Yeo.' },
+      { time: '11:40 am', title: 'Conferencia 6', desc: 'La crisis silenciosa - Pr. Alfonso Quevedo.' },
+      { time: '12:40 pm', title: 'Conferencia 7', desc: 'La iglesia que la sociedad necesita - Pr. Juan Colqui.' },
+      { time: '03:30 pm', title: 'Panel Innova', desc: 'Identidad, nuevas generaciones, el futuro de la iglesia.' },
+      { time: '08:00 pm,', title: 'Clausura del Congreso', desc: 'La unción del Espíritu Santo - Rev. Dominic Yeo.' },
     ],
   },
 ];
@@ -45,7 +37,7 @@ export default function Itinerary() {
   const [activeDay, setActiveDay] = useState(0);
 
   return (
-    <section id="itinerary" className="py-28 px-4 relative">
+    <section id="itinerary" className="py-14 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary/95 to-primary pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative z-10">
